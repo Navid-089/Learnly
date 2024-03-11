@@ -1,0 +1,82 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  
+  .menucontainer {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right,bisque, orange, salmon 95%);;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .menu {
+     width: 100%;
+  }
+
+
+
+  .menu img {
+    /* position: relative;
+    left: 6%;
+    top: 20%; */
+    height: auto;
+    width: 08vw;
+    padding-right: 40px;
+  }
+
+
+  .menu .options {
+    position: absolute;
+    left: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 6%;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    padding: 10;
+    margin: 0;
+  }
+  
+  .menu li {
+    
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  /* styles/index.module.css */
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* .options a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.options a:hover {
+  background-color: red;
+} */
+
+  
+  
+  

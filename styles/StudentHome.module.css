@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.homecontainer{
+   display: grid;
+   grid-template-columns: 1fr 4fr;
+   font-family: 'Poppins', Helvetica, sans-serif;
+  --pcolor: #F7931E;
+  --wcolor: aliceblue;
+  background-color: rgb(255, 249, 241);
+
+}
+
+.tutordetails{
+    display: flex;
+    flex-direction: column;
+}
+
+.tutordetails .image{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    height: 200px;
+    width: 200px;
+}
+
+.filtercontainer{
+    background-color: bisque;
+    padding: 20px;
+    border-right: 1px solid #ccc ;
+    position: sticky;
+    top: 0;
+    height: 80vh;
+    overflow-y: auto;
+
+}
+
+.filterdetails {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filterdetails h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.filterdetails label {
+    padding: 0px 10px 0px 0px;
+}
+
+.filterinput {
+    background-color:var(--wcolor);
+    width: 90%;
+    font-size: 14px;
+    margin: 10px 0px 0px 0px;
+    padding: 3%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+}
+
+
+.searchbar{
+    margin-bottom: 20px;
+    background-color:var(--wcolor);
+    width: 30%;
+    font-size: 14px;
+    padding: 1%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+    
+}
+
+.searchbtn {
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    color:  var(--pcolor);
+    right: 44px;
+    top: 2px;
+
+}
+
+.tutorslist{
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 80vh; 
+
+}
+
+
+.tutorlist{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.tutorcontainer{
+    border: none  ;
+    border-radius: 20px;
+    height: 320px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--wcolor);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+.tutorcontainer .image {
+    height: 300px;
+    width: 300px;
+}
+
+.tutorcontainer p {
+    font-size: 20px;
+}
+
+
+.image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+.gender {
+    background-color:var(--wcolor);
+    width: 50%;
+    font-size: 14px;
+    padding: 1%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+}
+
+.availability {
+    background-color:var(--wcolor);
+    width: 50%;
+    font-size: 14px;
+    padding: 1%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+}
+
+.tutorbtncontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.tutorbackbtn {
+    width: 130px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--pcolor);
+    box-shadow: 0 0 9px  var(--pcolor);
+    color: var(--wcolor);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tutorofferbtn {
+    width: 130px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--pcolor);
+    box-shadow: 0 0 9px  var(--pcolor);
+    color: var(--wcolor);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.offertutorcontainer {
+    margin-top: 50px;
+}
+
+.offertutorsub{
+    background-color:var(--wcolor);
+    width: 50%;
+    font-size: 14px;
+    padding: 3%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.offersubmitbtn {
+    width: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--pcolor);
+    box-shadow: 0 0 9px  var(--pcolor);
+    color: var(--wcolor);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}

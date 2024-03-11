@@ -1,0 +1,112 @@
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.bigcontainer { 
+    font-family: 'Poppins', Helvetica, sans-serif;
+    --pcolor: #F7931E;
+    --wcolor: aliceblue;
+    background-color: rgb(255, 249, 241);
+}
+
+.container {
+    padding: 100px;
+    padding-top: 50px;
+}
+
+.container h1 {
+    margin-bottom: 50px;
+}
+
+.batchcontainer {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: var(--wcolor);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+}
+
+.batchdetails{
+    flex-grow: 1;
+    font-size: 17px;
+}
+
+
+.joinbtn {
+    width: 130px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--pcolor);
+    box-shadow: 0 0 9px  var(--pcolor);
+    color: var(--wcolor);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-right: 30px;
+}
+
+.confirmationmodal{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(184, 77, 63);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmationmodal p {
+  color: var(--wcolor);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.confirmbtns{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.yes{
+  width: 130px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:  var(--pcolor);
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+  -6px -6px 10px -1px rgba(0,0,0,0.15);
+  color: var(--wcolor);
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.no{
+      width: 130px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color:  var(--wcolor);
+      box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+      -6px -6px 10px -1px rgba(0,0,0,0.15);
+      color: var(--pcolor);
+      border: none;
+      border-radius: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+}

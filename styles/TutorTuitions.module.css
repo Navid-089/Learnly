@@ -1,0 +1,70 @@
+/* myTuitions.module.css */
+.myTuitionsContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top of the container */
+}
+
+.leftColumn {
+  flex: 1;
+  margin-right: 20px; /* Add some spacing between columns */
+}
+
+.rightColumn {
+  flex: 2;
+}
+
+.myTuitionsHeading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tuitionCard {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tuitionCard:hover {
+  background-color: #f0f0f0; /* Add background color on hover */
+}
+
+.selectedTuition {
+  background-color: #f0f0f0; /* Add background color for selected tuition */
+}
+
+.studentImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.studentName {
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* Styles for tuition details in the right column */
+.tuitionDetails {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+}
+
+.selectTuitionText {
+  font-style: italic;
+  text-align: center;
+}

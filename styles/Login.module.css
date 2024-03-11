@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes up the whole viewport height */
+    background-color:  var(--pcolor);
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/loginbg3.jpg');
+    --pcolor: #F7931E;
+    --wcolor: aliceblue;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    background-color: var(--wcolor);
+    border-radius: 30px;
+    width: 850px;
+    height: 650px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(0,0,0,0.15);
+  }
+
+  .card:hover .span {
+    width: 90px;
+  }
+
+  .learnlyimg {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 0px 0px  30px;
+}
+    .learnlyimg img {
+        height: 80px;
+        padding: 40px;
+}
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(253, 249, 240);
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+        border-radius: 0px 30px 30px 0px;
+        padding: 0px 60px 60px 60px;
+
+    }
+  
+    .span {
+      position: absolute;
+        background-color:  var(--pcolor);
+        width: 20px;
+        height: 6px;
+        border-radius: 30px;
+        top: 16%;
+        left: 46%;
+        transition: 0.8s;
+    }
+        
+    
+    
+  .title h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    top: 30px;
+  }
+
+  .title p{
+    font-size: 17px;
+    margin-top: 90px;
+  }
+
+
+  .radio_tile_group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.input_container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 4px 20px 4px 20px;
+}
+
+.input_container input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.input_container .radio_tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    border: solid;
+    border-width: 3px;
+    border-color:  var(--pcolor);
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.studico {
+    font-size: 30px;
+    color:  var(--pcolor);
+}
+.tutorico {
+    font-size: 30px;
+    color:  var(--pcolor);
+}
+
+.input_container label {
+    position: relative;
+    color:  var(--pcolor);
+    font-size: 14px;
+    top: 15px;
+    font-weight: 600;
+}
+
+
+input:checked + .radio_tile {
+    background-color:  var(--pcolor);
+    transform: translateY(-2px);
+    box-shadow: 0 0 9px  var(--pcolor);
+}
+
+input:hover + .radio_tile {
+    transform: translateY(-2px);
+    box-shadow: 0 0 9px  var(--pcolor);
+}
+
+input:checked + .radio_tile .studico,
+input:checked + .radio_tile .tutorico,
+input:checked + .radio_tile label {
+    color: var(--wcolor);
+}
+
+  
+  .inputcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    gap: 1rem;
+    
+  }
+
+  .inputgroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px 0px 8px 8px ;
+  }
+  
+  .inputwrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputwrapper .icon {
+    position: absolute;
+    right: 0;
+    right: 20px;
+    color: var(--pcolor);
+  }
+
+      .eyebtn {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        position: absolute;
+        color:  var(--pcolor);
+        right: 0;
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .eyebtn:hover {
+        transform: translateY(-2px);
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      
+      .eyebtn:active {
+        transform: translateY(1px);
+        box-shadow: none;
+      }
+
+
+  
+
+  .email {
+    background-color:var(--wcolor);
+    width: 100%;
+    font-size: 17px;
+    padding: 3%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+  }
+
+  .email::placeholder {
+    color: #f7921e89;
+  }
+
+  .pass {
+    background-color: var(--wcolor);
+    width: 100%;
+    font-size: 17px;
+    padding: 3%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+  }
+
+  .pass::placeholder {
+    color: #f7921e89;
+  }
+
+  
+
+  .logincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .errormessage {
+    position: absolute;
+    bottom: 3%;
+    color: red;
+    font-weight: 600;
+    text-shadow: 0px 0px 0.5px  red ;
+  }
+
+  
+  .button {
+    width: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--pcolor);
+    box-shadow: 0 0 9px  var(--pcolor);
+    color: var(--wcolor);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+
+  .signuplink p {
+    color: #1818186c;
+    text-align: center;
+    font-size: 14px;
+  }

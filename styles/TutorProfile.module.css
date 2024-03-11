@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.container{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    --pcolor: #F7931E;
+    --wcolor: aliceblue;
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.studentdetails {
+    font-size: 19px;
+}
+
+.studentdetails p {
+    padding: 10px;
+}
+
+.editbtn{
+    width: 130px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  var(--pcolor);
+    box-shadow: 0 0 9px  var(--pcolor);
+    color: var(--wcolor);
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.studentedit input {
+    background-color:var(--wcolor);
+    width: auto;
+    font-size: 16px;
+    padding: 0.5%;
+    outline: none;
+    border: solid 3px   var(--pcolor);
+    border-radius: 20px;
+}
+
+
+    .btncontainer{
+        display: flex;
+        margin: 30px;
+        gap: 30px;
+    }
+
+
+    .savebtn{
+        width: 130px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:  var(--pcolor);
+        box-shadow: 0 0 9px  var(--pcolor);
+        color: var(--wcolor);
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .backbtn {
+        width: 130px;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:  var(--wcolor);
+        box-shadow: 0 0 9px  var(--wcolor);
+        color: var(--pcolor);
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .previewImage 
+    {
+      max-width: 600px;
+      max-height: 800px;
+    }
+

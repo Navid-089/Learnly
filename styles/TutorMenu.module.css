@@ -1,0 +1,25 @@
+/* styles.css */
+
+.menucontainer {
+  height: auto;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  padding: 10;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
